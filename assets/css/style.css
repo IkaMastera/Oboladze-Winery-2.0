@@ -1,88 +1,95 @@
-
 /* Custom */
 :root {
+  /* Colors */
+  --gold-color: hsl(38, 61%, 73%);
+  --silver-color: hsla(0, 0%, 65%, 1);
+  --davys-grey: hsla(30, 3%, 34%, 1);
+  --smoky-black-1: hsla(40, 12%, 5%, 1);
+  --smoky-black-2: hsla(30, 8%, 5%, 1);
+  --smoky-black-3: hsla(0, 3%, 7%, 1);
+  --eerie-black-1: hsla(210, 4%, 9%, 1);
+  --eerie-black-2: hsla(210, 4%, 11%, 1);
+  --eerie-black-3: hsla(180, 2%, 8%, 1);
+  --eerie-black-4: hsla(0, 0%, 13%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+  --white-alpha-20: hsla(0, 0%, 100%, 0.2);
+  --white-alpha-10: hsla(0, 0%, 100%, 0.1);
+  --black: hsla(0, 0%, 0%, 1);
+  --black-alpha-80: hsla(0, 0%, 0%, 0.8);
+  --black-alpha-15: hsla(0, 0%, 0%, 0.15);
 
-    /* Colors */
-    --gold-color: hsl(38, 61%, 73%);
-    --silver-color: hsla(0, 0%, 65%, 1);
-    --davys-grey: hsla(30, 3%, 34%, 1);
-    --smoky-black-1: hsla(40, 12%, 5%, 1);
-    --smoky-black-2: hsla(30, 8%, 5%, 1);
-    --smoky-black-3: hsla(0, 3%, 7%, 1);
-    --eerie-black-1: hsla(210, 4%, 9%, 1);
-    --eerie-black-2: hsla(210, 4%, 11%, 1);
-    --eerie-black-3: hsla(180, 2%, 8%, 1);
-    --eerie-black-4: hsla(0, 0%, 13%, 1);
-    --white: hsla(0, 0%, 100%, 1);
-    --white-alpha-20: hsla(0, 0%, 100%, 0.2);
-    --white-alpha-10: hsla(0, 0%, 100%, 0.1);
-    --black: hsla(0, 0%, 0%, 1);
-    --black-alpha-80: hsla(0, 0%, 0%, 0.8);
-    --black-alpha-15: hsla(0, 0%, 0%, 0.15);
+  /* Gradient Color */
+  --loading-text-gradient: linear-gradient(
+    90deg,
+    transparent 0% 16.66%,
+    var(--smoky-black-3) 33.33% 50%,
+    transparent 66.66% 75%
+  );
+  --gradient-1: linear-gradient(
+    to top,
+    hsla(0, 0%, 0%, 0.9),
+    hsla(0, 0%, 0%, 0.7),
+    transparent
+  );
 
-    /* Gradient Color */
-    --loading-text-gradient: linear-gradient(90deg, transparent 0% 16.66%, var(--smoky-black-3) 33.33% 50%, transparent 66.66% 75%);
-    --gradient-1: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), hsla(0, 0%, 0%, 0.7), transparent);
+  /* Typography */
+  --fontfamily-forum: "Forum", cursive;
+  --fontfamily-dm_sans: "DM Sans", sans-serif;
 
-    /* Typography */
-    --fontfamily-forum: 'Forum', cursive;
-    --fontfamily-dm_sans: 'DM Sans', sans-serif;
+  --fontsize-display-1: calc(1.3rem + 6vw);
+  --fontsize-headline-1: calc(2rem + 2.5vw);
+  --fontsize-headline-2: calc(1.3rem + 2.4vw);
+  --fontsize-title-1: calc(1.6rem + 1.1vw);
+  --fontsize-title-2: 2.2rem;
+  --fontsize-title-3: 2.1rem;
+  --fontsize-title-4: calc(1.6rem + 1.2vw);
+  --fontsize-body-1: 2.4rem;
+  --fontsize-body-2: 1.6rem;
+  --fontsize-body-3: 1.8rem;
+  --fontsize-body-4: 1.6rem;
+  --fontsize-label-1: 1.4rem;
+  --fontsize-label-2: 1.2rem;
 
-    --fontsize-display-1: calc(1.3rem + 6vw);
-    --fontsize-headline-1: calc(2rem + 2.5vw);
-    --fontsize-headline-2: calc(1.3rem + 2.4vw);
-    --fontsize-title-1: calc(1.6rem + 1.1vw);
-    --fontsize-title-2: 2.2rem;
-    --fontsize-title-3: 2.1rem;
-    --fontsize-title-4: calc(1.6rem + 1.2vw);
-    --fontsize-body-1: 2.4rem;
-    --fontsize-body-2: 1.6rem;
-    --fontsize-body-3: 1.8rem;
-    --fontsize-body-4: 1.6rem;
-    --fontsize-label-1: 1.4rem;
-    --fontsize-label-2: 1.2rem;
-    
-    --weight-regular: 400;
-    --weight-bold: 700;
+  --weight-regular: 400;
+  --weight-bold: 700;
 
-    --lineheight-1: 1em;
-    --lineheight-2: 1.2em;
-    --lineheight-3: 1.5em;
-    --lineheight-4: 1.6em;
-    --lineheight-5: 1.85em;
-    --lineheight-6: 1.4em;
+  --lineheight-1: 1em;
+  --lineheight-2: 1.2em;
+  --lineheight-3: 1.5em;
+  --lineheight-4: 1.6em;
+  --lineheight-5: 1.85em;
+  --lineheight-6: 1.4em;
 
-    --letterspacing-1: 0.15em;
-    --letterspacing-2: 0.4em;
-    --letterspacing-3: 0.2em;
-    --letterspacing-4: 0.3em;
-    --letterspacing-5: 3px;
+  --letterspacing-1: 0.15em;
+  --letterspacing-2: 0.4em;
+  --letterspacing-3: 0.2em;
+  --letterspacing-4: 0.3em;
+  --letterspacing-5: 3px;
 
-    --section-space: 70px;
+  --section-space: 70px;
 
-    --shadow-1: 0px 0px 25px 0px hsla(0m 0%, 0%, 0.25);
+  --shadow-1: 0px 0px 25px 0px hsla(0m 0%, 0%, 0.25);
 
-    -radius: 24px;
-    --radius-circle: 50%;
+  -radius: 24px;
+  --radius-circle: 50%;
 
-    --transition-1: 250ms ease;
-    --transition-2: 500ms ease;
-    --transition-1: 750ms ease;
+  --transition-1: 250ms ease;
+  --transition-2: 500ms ease;
+  --transition-1: 750ms ease;
 }
-
 
 /* RESET */
 
 *,
 *::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a,
@@ -94,122 +101,176 @@ button,
 select,
 ion-icon,
 textarea {
-    display: block;
+  display: block;
 }
 
-a{
-    color: inherit;
-    text-decoration: none;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-img{
-    height: auto;
+img {
+  height: auto;
 }
 
 input,
 button,
 select,
-textarea{
-    background: none;
-    border: none;
-    font: inherit;
+textarea {
+  background: none;
+  border: none;
+  font: inherit;
 }
 
 input,
 select,
-textarea{
-    width: 100%;
-    outline: none;
+textarea {
+  width: 100%;
+  outline: none;
 }
 
-button { 
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
 
 address {
-    font-style: normal;
+  font-style: normal;
 }
 
-html{
-    font-size: 10px;
-    scroll-behavior: smooth;
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
 }
 
-body{
-    background-color: var(--eerie-black-1);
-    color: var(--white);
-    font-family: var(--fontfamily-dm_sans);
-    font-size: var(--fontsize-body-4);
-    font-weight: var(--weight-regular);
-    line-height: var(--lineheight-5);
-    overflow: hidden;
-    height: 300vh;
+body {
+  background-color: var(--eerie-black-1);
+  color: var(--white);
+  font-family: var(--fontfamily-dm_sans);
+  font-size: var(--fontsize-body-4);
+  font-weight: var(--weight-regular);
+  line-height: var(--lineheight-5);
+  overflow: hidden;
+  height: 300vh;
 }
 
 body.loaded {
-    overflow: overlay;
+  overflow: overlay;
 }
 
-body.nav-active{
-    overflow: hidden;
+body.nav-active {
+  overflow: hidden;
 }
 
-::-webkit-scrollbar{
-    width: 5px;
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-::-webkit-scrollbar-track{
-    background-color: transparent;
+::-webkit-scrollbar-track {
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--gold-color);
+  background-color: var(--gold-color);
 }
-
 
 /* TYPOGRAPHY */
 
-
 /* PRELOAD */
+.preload {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--gold-color);
+  z-index: 10;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  transition: var(--transition-2);
+}
 
+.preload.loaded > * {
+  transition: var(--transition-1);
+}
 
+.preload.loaded > * {
+  opacity: 0;
+}
+
+.preload.loaded {
+  transition-delay: 250ms;
+  transform: translateY(100%);
+}
+
+.circle {
+  width: 112px;
+  height: 112px;
+  border-radius: var(--radius-circle);
+  border: 3px solid var(--white);
+  border-block-start-color: var(--smoky-black-3);
+  margin-block-end: 45px;
+  animation: rotate360 1s linear infinite;
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.preload .text {
+  background-image: var(--loading-text-gradient);
+  background-size: 300%;
+  font-size: calc(1rem + 2vw);
+  font-weight: var(--weight-bold);
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  padding-inline-start: 12px;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0.5px var(--eerie-black-3);
+  animation: loadingText linear 2s infinite;
+}
+
+@keyframes loadingText {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
 /* TOPBAR */
 
-
 /* HEADER */
-
 
 /* HERO * /
 
 
 /* SERVICE */
 
-
 /* ABOUT */
-
 
 /* SPECIAL WINE */
 
-
 /* WINE MENU */
-
 
 /* TESTIMONIALS */
 
-
 /* WINE RESERVATION */
-
 
 /* FEATURES */
 
-
 /* EVENT */
-
 
 /* FOOTER */
 
-
 /* BACK TO TOP */
-
 
 /* RESPONSIVE MEDIA */
