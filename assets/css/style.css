@@ -247,6 +247,9 @@ body.nav-active {
   }
 }
 /* TOPBAR */
+.topbar {
+  display: none;
+}
 
 /* HEADER */
 
