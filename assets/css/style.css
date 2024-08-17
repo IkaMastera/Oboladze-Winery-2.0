@@ -473,6 +473,7 @@ body.nav-active {
   place-content: center;
   justify-items: center;
   transition: var(--transition-2);
+  display: none;
 }
 
 .preload.loaded > * {
@@ -997,6 +998,40 @@ body.nav-active {
 }
 
 /* SPECIAL WINE */
+
+.special-wine-content {
+  padding-block: 70px;
+}
+
+.special-wine .abs-img {
+  margin-inline: auto;
+  margin-block-end: 12px;
+}
+
+.special-wine .section-text {
+  margin-block: 16px 40px;
+}
+
+.special-wine-content .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-block-end: 40px;
+}
+
+.special-wine-content .del {
+  text-decoration: none;
+  color: var(--davys-grey);
+}
+
+.special-wine-content .span {
+  color: var(--gold-color);
+}
+
+.special-wine .btn {
+  margin-inline: auto;
+}
 
 /* WINE MENU */
 
