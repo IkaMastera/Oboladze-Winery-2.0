@@ -460,6 +460,20 @@ body.nav-active {
   width: 100%;
 }
 
+.mov-anim {
+  animation: move 5s linear infinite;
+}
+
+@keyframes move {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+}
+
 /* PRELOAD */
 .preload {
   position: fixed;
@@ -941,7 +955,7 @@ body.nav-active {
 
 .about .btn {
   margin-inline: auto;
-  margin-inline-start: 26px;
+  margin-block-start: 26px;
 }
 
 .about .container {
@@ -1035,6 +1049,91 @@ body.nav-active {
 
 /* WINE MENU */
 
+.menu .section-title {
+  margin-block-end: 40px;
+}
+
+.menu .grid-list {
+  margin-block-end: 50px;
+}
+
+.menu-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.hover\:card .card-banner {
+  background-color: var(--gold-color);
+}
+
+.hover\:card .card-banner .img-cover {
+  transition: var(--transition-2);
+}
+
+.hover\:card:is(:hover, :focus-within) .card-banner .img-cover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+.menu-card .card-banner {
+  flex-shrink: 0;
+  border-radius: var(--radius-circle);
+}
+
+.menu-card .card-title {
+  transition: var(--transition-1);
+}
+
+.menu-card .card-title:is(:hover, :focus-visible) {
+  color: var(--gold-color);
+}
+
+.menu-card .badge {
+  background-color: var(--gold-color);
+  color: var(--eerie-black-1);
+  font-family: var(--fontfamily-forum);
+  max-width: max-content;
+  line-height: var(--lineheight-6);
+  text-transform: uppercase;
+  padding-inline: 10px;
+  margin-block-start: 10px;
+}
+
+.menu-card .span {
+  color: var(--gold-color);
+  margin-block: 10px;
+}
+
+.menu-card .card-text {
+  color: var(--silver-color);
+  line-height: var(--lineheight-4);
+}
+
+.menu-text .span {
+  display: inline-block;
+  color: var(--gold-color);
+}
+
+.menu .btn {
+  margin-inline: auto;
+  margin-block-start: 26px;
+}
+
+.menu .shape {
+  display: block;
+  width: 70%;
+}
+
+.menu .shape-2 {
+  top: 0;
+  left: 0;
+}
+
+.menu .shape-3 {
+  bottom: 0;
+  right: 0;
+}
 /* TESTIMONIALS */
 
 /* WINE RESERVATION */
