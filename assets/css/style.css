@@ -474,6 +474,12 @@ body.nav-active {
   }
 }
 
+.has-bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 /* PRELOAD */
 .preload {
   position: fixed;
@@ -1134,7 +1140,43 @@ body.nav-active {
   bottom: 0;
   right: 0;
 }
+
 /* TESTIMONIALS */
+
+.testi {
+  padding-block-end: 340px;
+  position: static;
+}
+
+.testi .quote {
+  font-size: 3rem;
+  font-family: var(--fontfamily-forum);
+  line-height: 0.7em;
+}
+
+.testi .wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-block: 40px 50px;
+}
+
+.testi .separator {
+  animation: rotate 15s linear infinite;
+}
+
+.profile .img {
+  margin-inline: auto;
+  border-radius: var(--radius-circle);
+  margin-block-end: 15px;
+}
+
+.testi .profile-name {
+  color: var(--gold-color);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--letterspacing-3);
+}
 
 /* WINE RESERVATION */
 
