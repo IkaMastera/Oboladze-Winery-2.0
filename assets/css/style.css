@@ -1709,4 +1709,42 @@ textarea.input-field {
     width: calc(50% - 20px);
     margin-inline: auto;
   }
+
+  /*Header*/
+  .navbar-list {
+    margin-inline: 30px;
+  }
+
+  /* HERO */
+  .hero .slider-btn {
+    display: grid;
+    position: absolute;
+    z-index: 1;
+    color: var(--gold-color);
+    font-size: 2.4rem;
+    border: 1px solid var(--gold-color);
+    width: 45px;
+    height: 45px;
+    place-items: center;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    transition: var(--transition-1);
+  }
+
+  .hero .slider-btn ion-icon {
+    transform: rotate(-45deg);
+  }
+
+  .hero .slider-btn.prev {
+    left: 30px;
+  }
+
+  .hero .slider-btn.next {
+    right: 30px;
+  }
+
+  .hero .slider-btn:is(:hover, :focus-visible) {
+    background-color: var(--gold-color);
+    color: var(--black);
+  }
 }
